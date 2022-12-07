@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+  scroll-behavior: smooth;
+  background-color: rgb(255, 255, 255);
+}
+.container-anm {
+  animation: transisiMasuk .99s ease;
+}
+@keyframes transisiMasuk {
+  from {
+      opacity: 0;
+      transform: translate(0, 20px);
+  }
+  to {
+      opacity: 2;
+      transform: translate(0, 0);
+  }
+}
+.aktif {
+  color: #F5A738 !important;
+}
+.navbar {
+  background-color: rgb(17, 17, 17);
+}
+.navbar-text {
+    display: flex;
+    align-items: center;
+}
+.navbar-text .menu-daftar{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 500;
+}
+.navbar-text .user{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 500;
+}
+.user {
+    margin-right: 13px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 16px;
+}
+.user i {
+    color: black;
+    font-size: 13PX;
+    margin-right: 9px;
+}
+
+.navbar-nav a{
+    margin: 0 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.navbar-nav .dropdown-menu {
+  background-color: rgb(75, 75, 75);
+}
+.navbar-nav .dropdown-menu a{
+  background: transparent;
+}
+.nav-link {
+  font-size: 15px;
+  font-weight: 500  ;
+  color: #f0b563;
+}
+.nav-link:hover {
+  color: #F5A738;
+}
+
+
+
+
+
+/* HOME */
+.parallax {
+  background-image: url("	https://balistarisland.com/wp-content/uploads/2016/09/borobudurtemple.jpg");
+  width: 100%;
+  min-height: 90vh; 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.overlay {
+  width: 100%;
+}
+
+.overlay .home {
+  height: 97.3%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index:999
+}
+
+.overlay h2 {
+  margin-top: 210px;
+  margin-left: 8%;
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: 800;
+}
+.overlay p {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  margin-left: 8%;
+  margin-right: 48%;
+}
+.overlay form {
+  z-index: 1px;
+}
+.overlay .btn-search {
+  background-color: #f0b563;
+}
+.judul-periode {
+  margin-top: 40px;
+  font-weight: 800;
+  font-size: 30px;
+  color: #555;
+}
+.grid-home h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #555;
+}
+.grid-home p {
+  margin-top: 30px;
+  font-weight: 500;
+  color: #555;
+  font-size: 15px;
+}
+.judul-quotes {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 800;
+  color: #555;
+}
+.carousel-item p {
+  color: #444;
+  font-weight: 500;
+}
+.carousel-item h1{
+  font-weight: 800;
+  color: #444;
+  font-size: 25px;
+}
+.carousel-item .active {
+  color: #F5A738;
+}
+
+    /* ABOUT US*/
+.container-about-us {
+  margin: 100px 15%;
+
+}
+.container-about-us h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: #555;
+  margin-bottom: 30px;
+}
+.text-about p {
+  color: #666;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 400;
+  word-spacing: 1px;
+}
+
+.judul-artikel{
+  font-weight: 800;
+  font-size: 30px;
+}
+.btn-artikel {
+  font-size: 15px;
+  border: 1px solid;
+  font-weight: 600;
+  margin-top: 15px;
+  width: 100%;
+}
+.btn-artikel:hover {
+  background-color: #F5A738;
+}
+.ml6 {
+  color: #ffffff;
+  margin-top: 200px;
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+  text-align: center;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+/* LOGIN */
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.alert {
+  z-index: 2000;
+  margin: 20px 450px;
+  background-color: #F5A738;
+  color: #444;
+}
+.form-signin {
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 7px 50px 5px rgba(71, 71, 71, 0.3);
+}
+.form-signin h1{
+  color: #444;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.form-signin input {
+  margin-bottom: 13px;
+}
+.form-signin img {
+  margin-top: -40px;
+}
+.form-signin input[type="text"]:hover {
+  box-shadow: 0px 3px 8px 2px #F5A738;
+}
+.form-register input[type="email"]:hover {
+  box-shadow: 0px 3px 10px 3px #F5A738;
+}
+.form-signin input[type="password"]:hover {
+  box-shadow: 0px 3px 10px 3px #F5A738;
+}
+
+
+
+
+/* Register*/
+
+.form-register {
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0px 7px 50px 5px rgba(71, 71, 71, 0.3);
+}
+.form-register h1{
+  color: #444;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+.form-register input {
+  margin-bottom: 13px;
+}
+.form-register img {
+  margin-top: -40px;
+}
+.form-register input[type="text"]:hover {
+  box-shadow: 0px 3px 8px 2px #F5A738;
+}
+.form-register input[type="email"]:hover {
+  box-shadow: 0px 3px 10px 3px #F5A738;
+}
+.form-register input[type="password"]:hover {
+  box-shadow: 0px 3px 10px 3px #F5A738;
+}
+.submit-button {
+  margin-top: 15px;
+  background-color: #ffd497;
+  font-weight: 800;
+  font-size: 19px;
+}
+.submit-button:hover {
+  background-color: #F5A738;
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer span {
+  font-size: 13px;
+}
+.btn .link-reg {
+  text-decoration: none;
+  color: #666;
+
+}
